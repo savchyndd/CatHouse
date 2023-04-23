@@ -4,25 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Котодім</title>
+    <link rel="shortcut icon" href="./img/cat-logo.svg" type="x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="#">
-        <use>
-          <svg></svg>
-        </use>
+    <header class="page-header container">
+      <a href="./index.html" class="site-logo">
+        <svg width="24" height="24" aria-label="Логотип">
+          <use href="./img/icons.svg#icon-cat-logo"></use>
+        </svg>
+        <!-- <img src="./img/cat-logo.svg" alt="Логотип"> -->
         Котодім
       </a>
       <nav class="page-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#">Обрати котика</a></li>
-          <li class="nav-item"><a href="#">Задонатити котикам</a></li>
-          <li class="nav-item"><a href="#">Контакти</a></li>
+          <li class="nav-item"><a href="#chooseCat">Обрати котика</a></li>
+          <li class="nav-item"><a href="#gallery">Наші котики</a></li>
+          <li class="nav-item"><a href="#footer">Контакти</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="hero container">
+        <section class="greting">
+          <h1>Привіт, людино</h1>
+          <p>
+            Бракує в житті шовкових лапок, м’якенького пухнастого животика, теплого муррркотіння й
+            веселого розгардіяшу? Візьми собі котика.
+          </p>
+        </section>
+      </div>
+      <section id="chooseCat" class="section container">
+        <h2 class="section-title">Ці друзяки готові приймати твою любов і піклування</h2>
+        <ul class="shooseCat-list">
+          <li class="shooseCat-item">
+            <img src="./img/barbarys_mobile@1x.jpg" alt="Кіт Барбарис" />
+            <div class="card-content">
+              <h3>Барбарис</h3>
+              <p>Хижий для ворогів, ласкавий та м’якесенький до своїх.</p>
+            </div>
+          </li>
+          <li class="shooseCat-item">
+            <img src="./img/myshka_mobile@1x.jpg" alt="Кіт Мишка" />
+            <div class="card-content">
+              <h3>Мишка</h3>
+              <p>Киця з роду котів-талісманів. Несе удачу та затишок в дім.</p>
+            </div>
+          </li>
+          <li class="shooseCat-item">
+            <img src="./img/kapitan_mobile@1x.jpg" alt="Кіт Капітан" />
+            <div class="card-content">
+              <h3>Капітан</h3>
+              <p>Всюди головний. Підкорить тебе, але ти будеш щасливий.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="gallery" class="section container">
+        <h2 class="section-title">Котики, які вже знайшли сім’ю</h2>
+        <p class="section-text">
+          Ти тільки поглянь, скільки ніжності! <br />
+          На місці цих задоволених людей можеш бути ти.
+        </p>
+        <ul class="gallery-list">
+          <li class="gallery-item"><img src="./img/1_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/2_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/3_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/4_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/5_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/6_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/7_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/8_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/9_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/10_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/11_mobile@1x.jpg" alt="" /></li>
+          <li class="gallery-item"><img src="./img/12_mobile@1x.jpg" alt="" /></li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer" class="page-footer">
+      <div class="container">
+        <p class="footer-text">
+          <a href="./index.html">
+            <svg width="24px" height="24px">
+              <use href="./img/icons.svg#icon-cat-logo"></use>
+            </svg>
+          </a>
+          <br />
+          Котики — то щастя.<br />
+          Забирай, люби й ставай щасливішим.
+        </p>
+        <div class="social">
+          <p class="social-text">Соцмережі</p>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#">
+                <svg width="16px" height="16px">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#">
+                <svg width="16px" height="16px">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#">
+                <svg width="16px" height="16px">
+                  <use href="./img/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#">
+                <svg width="16px" height="16px">
+                  <use href="./img/icons.svg#icon-tiktok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
